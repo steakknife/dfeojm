@@ -16,7 +16,7 @@ end
  
 desc "push gem to ruby gems"
 task :release => :build do
-  system "gem push #{FULL_PROJECT}"
+  system "gem push #{FULL_PROJECT}.gem"
 end
 
 desc "install the gem locally"

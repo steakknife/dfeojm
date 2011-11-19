@@ -12,9 +12,14 @@ module DFEOJM
 	    banner <<-EOS
 	DownForEveryoneOrJustMe (tm) unofficial ruby utility #{::DFEOJM::VERSION}  (c) 2011 Barry Allard
 
+  Usage:
+         dfeojm hostname.com
+
 	    EOS
 	  end
-	  app = DFEOJM.new
+    raise Trollop::HelpNeeded if ARGV.empty? # show help screen
+
+	  app = DFEOJM.new ARGV[1]
 	rescue => e
 #	  puts e
 #	  exit 1

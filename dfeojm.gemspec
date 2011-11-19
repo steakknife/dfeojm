@@ -22,9 +22,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rake', '>= 0.8.3'
 
   # Man files are required because they are ignored by git
-  s.files            = Dir['lib/**/*.rb', 'bin/*'] + %W{LICENSE README.md}
-  s.test_files       = `git ls-files -- {test,spec,features}/*`.split('\n').select { |d| d =~ %r{^(README|bin/|data/|ext/|lib/|spec/|test/)} }
-  s.executables      = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
+  s.files        = `git ls-files`.split("\n")
+  s.executables  = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
   s.require_paths    = ['lib']
 
 end

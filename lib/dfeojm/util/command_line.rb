@@ -19,7 +19,7 @@ module DFEOJM
 	  end
     raise Trollop::HelpNeeded if ARGV.empty? # show help screen
 
-	  app = DFEOJM.new ARGV[1]
+	  app = DFEOJM.new ARGV[0]
 	rescue => e
 #	  puts e
 #	  exit 1

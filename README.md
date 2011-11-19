@@ -1,4 +1,4 @@
-https://secure.travis-ci.org/steakknife/dfeojm.png
+[![Build Status](https://secure.travis-ci.org/steakknife/dfeojm.png)](http://travis-ci.org/steakknife/dfeojm)
 
 DownForEveryoneOrJustMe.com CLI and Ruby API
 =============================

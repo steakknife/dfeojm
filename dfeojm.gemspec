@@ -18,12 +18,12 @@ Gem::Specification.new do |s|
   s.add_dependency 'nokogiri'
   s.add_dependency 'trollop'
   s.add_development_dependency 'bundler', '>= 1.0.0'
+  s.add_development_dependency 'rspec', '>= 2.7.0'
 
   # Man files are required because they are ignored by git
   s.files            = Dir['lib/**/*.rb', 'bin/*'] + %W{LICENSE README.md}
   s.test_files       = `git ls-files -- {test,spec,features}/*`.split('\n').select { |d| d =~ %r{^(README|bin/|data/|ext/|lib/|spec/|test/)} }
   s.executables      = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
   s.require_paths    = ['lib']
-
 
 end

@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'trollop'
   s.add_development_dependency 'bundler', '>= 1.0.0'
   s.add_development_dependency 'rspec', '>= 2.7.0'
+  s.add_development_dependency 'rake', '>= 0.8.3'
 
   # Man files are required because they are ignored by git
   s.files            = Dir['lib/**/*.rb', 'bin/*'] + %W{LICENSE README.md}

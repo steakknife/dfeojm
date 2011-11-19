@@ -1,5 +1,8 @@
+https://secure.travis-ci.org/steakknife/dfeojm.png
+
 DownForEveryoneOrJustMe.com CLI and Ruby API
 =============================
+
 
 This is an unofficial gem and in no way connected with DownForEveryoneOrJustMe.com.
 

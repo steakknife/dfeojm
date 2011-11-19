@@ -10,16 +10,19 @@ module DFEOJM
 	  opts = Trollop::options do
 	    version "DownForEveryoneOrJustMe (tm) unofficial ruby utility #{::DFEOJM::VERSION}  (c) 2011 Barry Allard"
 	    banner <<-EOS
-	DownForEveryoneOrJustMe (tm) unofficial ruby utility #{::DFEOJM::VERSION}  (c) 2011 Barry Allard
+DownForEveryoneOrJustMe (tm) unofficial ruby utility #{::DFEOJM::VERSION}  (c) 2011 Barry Allard
+
 
   Usage:
          dfeojm hostname.com
 
+
 	    EOS
 	  end
-    raise Trollop::HelpNeeded if ARGV.empty? # show help screen
+    Trollop::die "hostname must be present" if ARGV.empty? # show help screen
 
 	  app = DFEOJM.new ARGV[0]
+    puts app.to_s
 	rescue => e
 #	  puts e
 #	  exit 1

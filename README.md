@@ -3,9 +3,19 @@
 DownForEveryoneOrJustMe.com CLI and Ruby API
 =============================
 
+This requires internet access and checks DownForEveryoneOrJustMe.com to see if a site is up or down.
 
-This is an unofficial gem and in no way connected with DownForEveryoneOrJustMe.com.
+Usage
+-----
+    $ dfeojm www.google.com
+    www.google.com is up
+    $ dfeojm www.thisdomainisinvalid.com
+    www.thisdomainisinvalid.com looks down
 
+Note
+----
+   dfeojm returns an exit code of 0 is a site is up, or 1 otherwise.
+    
 Setup
 -----
     [sudo] gem install dfeojm
@@ -22,6 +32,12 @@ License
 -------
 
 Released under the [MIT license](http://www.opensource.org/licenses/mit-license.php).
+
+
+Discaimer
+---------
+This is an unofficial gem and in no way connected with DownForEveryoneOrJustMe.com.
+
 
 Created by Barry Allard
 

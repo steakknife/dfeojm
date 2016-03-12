@@ -18,7 +18,7 @@ Note
     
 Setup
 -----
-    [sudo] gem install dfeojm
+    [sudo] gem install dfeojm -P MediumSecurity
 
 Hacking
 -------
@@ -26,13 +26,16 @@ Please fork and create a topical branch similar to yournickname-feature-applies_
 
 Issues
 ------
-Use the github issue tracker.
+Use the [github issue tracker](https://github.com/steakknife/dfeojm).
 
 License
 -------
 
 Released under the [MIT license](http://www.opensource.org/licenses/mit-license.php).
 
+Code of Conduct
+---------------
+Don't be a d!ck.
 
 Discaimer
 ---------
